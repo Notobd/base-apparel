@@ -47,6 +47,8 @@ main {
 .notification {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .input {
@@ -74,7 +76,6 @@ input[placeholder] {
   width: 100%;
 }
 .error {
-  margin-left: 2.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: hsl(0, 93%, 55%);
@@ -102,25 +103,32 @@ input[placeholder] {
   padding: 2rem;
 } */
 .attribution {
-  font-size: 11px;
+  font-size: 2rem;
+  font-weight: 900;
   text-align: center;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: blue;
 }
 @media (min-width: 1024px) {
   .hero-img {
-    width: 90%;
+    width: 100%;
   }
   .hero-mob {
     display: none;
   }
   .logo-img {
-    width: 50%;
+    width: 40%;
+  }
+  .notification {
+    align-items: unset;
   }
   .error-icon {
     position: absolute;
-    left: 62%;
+    left: 72%;
     width: 7%;
   }
   h1 {
@@ -139,36 +147,49 @@ input[placeholder] {
   }
   h1 + p {
     font-size: 2rem;
+    font-weight: 500;
     line-height: 2;
     width: 40ch;
+    color: hsl(0, 36%, 70%);
   }
 
   #email {
-    width: 90%;
+    width: 100%;
     padding: 1.5rem;
   }
   .submit {
     position: absolute;
-    left: 69.5%;
+    left: 80%;
     border-radius: 35px;
     width: 20%;
     cursor: pointer;
-    color: hsl(0, 80%, 76%);
+    background-color: hsl(0, 80%, 80%);
+  }
+  #input-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .error {
+    margin-left: 1.5rem;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .hero-img {
-    width: 90%;
+    width: 100%;
   }
   .hero-mob {
     display: none;
   }
   .logo-img {
-    width: 40%;
+    width: 30%;
+  }
+  .notification {
+    align-items: unset;
   }
   h1 {
     letter-spacing: 1.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 300;
     color: hsl(0, 36%, 70%);
     line-height: 1.5;
@@ -181,13 +202,24 @@ input[placeholder] {
     text-transform: uppercase;
   }
   h1 + p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2;
     width: 40ch;
+    font-weight: 500;
+    color: hsl(0, 36%, 70%);
+  }
+  #input-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   #email {
-    width: 90%;
+    width: 100%;
     padding: 1.5rem;
+  }
+  #email[placeholder] {
+    font-weight: 300;
+    font-size: 1.2rem;
   }
   .error-icon {
     position: absolute;
@@ -198,15 +230,18 @@ input[placeholder] {
     position: absolute;
     left: 78%;
     border-radius: 35px;
-    width: 25%;
+    width: 22%;
     cursor: pointer;
-    color: hsl(0, 80%, 76%);
+    background-color: hsl(0, 80%, 80%);
+  }
+  .arr-btn {
+    padding: 0.9rem;
+  }
+  .error {
+    margin-left: 1.5rem;
   }
 }
 @media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
   main {
     background-color: hsl(0, 100%, 98%);
     gap: 0;
@@ -228,19 +263,19 @@ input[placeholder] {
     order: 2;
   }
   .logo-img {
-    width: 35%;
+    width: 30%;
     margin-left: 30px;
   }
   .error-icon {
     width: 5%;
   }
   .notification {
-    padding: 20px;
+    padding: 2rem;
   }
   h1 {
     text-align: center;
     letter-spacing: 0.5rem;
-    font-size: 5.5rem;
+    font-size: 3rem;
     font-weight: 300;
     color: hsl(0, 36%, 70%);
     line-height: 1.5;
@@ -254,32 +289,47 @@ input[placeholder] {
     text-transform: uppercase;
   }
   h1 + p {
-    margin-left: 10px;
     text-align: center;
-    font-size: 2rem;
-    width: 32ch;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 36ch;
+    color: hsl(0, 36%, 70%);
   }
   #email {
     width: 100%;
     padding: 1.4rem;
   }
+  #email[placeholder] {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
   .error-icon {
     position: absolute;
-    left: 78%;
+    left: 67%;
     width: 7%;
   }
   .submit {
     position: absolute;
-    left: 86%;
-    border-radius: 35px;
-    width: 15%;
+    left: 75%;
+    border-radius: 25px;
+    width: 25%;
     cursor: pointer;
-    padding: 0.2;
     background-color: hsl(0, 80%, 80%);
+  }
+  .arr-btn {
+    padding: 0.8rem;
   }
   #input-form {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  .attribution {
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
