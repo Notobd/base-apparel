@@ -17,6 +17,7 @@ const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const validateMail = function () {
   let mailValue = emailInput.value;
   if (mailValue === '') {
+    error.style.display = 'block';
     message.textContent = 'Input a mail';
   } else if (!emailReg.test(mailValue)) {
     error.style.display = 'block';
