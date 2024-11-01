@@ -160,6 +160,9 @@ input[placeholder] {
   }
 }
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   main {
     background-color: hsl(0, 100%, 98%);
     gap: 0;
@@ -181,7 +184,7 @@ input[placeholder] {
   }
   h1 {
     text-align: center;
-    letter-spacing: 1.5rem;
+    letter-spacing: 0.5rem;
     font-size: 5.5rem;
     font-weight: 300;
     color: hsl(0, 36%, 70%);
@@ -196,19 +199,20 @@ input[placeholder] {
     text-transform: uppercase;
   }
   h1 + p {
+    margin-left: 10px;
     text-align: center;
     font-size: 2rem;
     width: 32ch;
   }
   #email {
-    min-width: 90%;
+    width: 100%;
     padding: 1.5rem;
   }
   .submit {
     position: absolute;
-    left: 65%;
+    left: 80%;
     border-radius: 35px;
-    width: 15%;
+    width: 18%;
     cursor: pointer;
     color: hsl(0, 80%, 76%);
   }
