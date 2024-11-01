@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-info">
+        <div>
+          <img src="/images/logo.svg" alt="logo" class="logo-img" />
+        </div>
+        <img src="/images/hero-mobile.jpg" alt="girl" class="hero-mob" />
+
+        <h1>
+          We're <span class="action">coming</span>
+          <span class="action">soon</span>
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="get" id="input-form">
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            class="input"
+          />
+          <button type="submit" class="submit">
+            <img src="/images/icon-arrow.svg" alt="arrow" class="arr-btn" />
+          </button>
+        </form>
+        <p class="error"></p>
+      </div>
+      <div class="hero-section">
+        <img src="/images/hero-desktop.jpg" alt="fine girl" class="hero-img" />
+      </div>
+      <!-- <div class="hero-mobile"></div> -->
+      <script src="index.js"></script>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>

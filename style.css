@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(0, 6%, 54%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 90;
+  font-style: normal;
+}
+main {
+  display: flex;
+  gap: 30px;
+  padding: 2rem;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.logo-img,
+.hero-img,
+.hero-mob {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.input {
+  border-radius: 35px;
+  padding: 1.5rem;
+  width: 90%;
+  border: 1px solid hsl(0, 36%, 70%);
+}
+.input:focus {
+  outline: none;
+  border: 0.2rem solid hsl(0, 93%, 58%);
+}
+input[placeholder] {
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 90;
+  font-style: normal;
+}
+.error {
+  color: hsl(0, 93%, 55%);
+}
+.submit {
+  position: absolute;
+  left: 72%;
+  border-radius: 35px;
+  width: 17%;
+  cursor: pointer;
+  color: hsl(0, 80%, 76%);
+}
+.arr-btn {
+  padding: 1.3rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1024px) {
+  .hero-img {
+    width: 90%;
+  }
+  .hero-mob {
+    display: none;
+  }
+  .logo-img {
+    width: 50%;
+  }
+  h1 {
+    letter-spacing: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    width: 10ch;
+    text-transform: uppercase;
+  }
+  .action {
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+  h1 + p {
+    font-size: 2rem;
+    line-height: 2;
+    width: 40ch;
+  }
+  #email {
+    min-width: 90%;
+    padding: 1.5rem;
+  }
+  .submit {
+    position: absolute;
+    left: 34%;
+    border-radius: 35px;
+    width: 10%;
+    cursor: pointer;
+    color: hsl(0, 80%, 76%);
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .hero-img {
+    width: 90%;
+  }
+  .hero-mob {
+    display: none;
+  }
+  .logo-img {
+    width: 40%;
+  }
+  h1 {
+    letter-spacing: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    width: 10ch;
+    text-transform: uppercase;
+  }
+  .action {
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+  h1 + p {
+    font-size: 1.5rem;
+    line-height: 2;
+    width: 40ch;
+  }
+  #email {
+    min-width: 90%;
+    padding: 1.5rem;
+  }
+  .submit {
+    position: absolute;
+    left: 22%;
+    border-radius: 35px;
+    min-width: 5%;
+    cursor: pointer;
+    color: hsl(0, 80%, 76%);
+  }
+}
+@media (max-width: 767px) {
+  main {
+    background-color: hsl(0, 100%, 98%);
+    gap: 0;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-mob {
+    width: 100%;
+  }
+  .hero-section {
+    order: 1;
+  }
+  .main-info {
+    order: 2;
+  }
+  .logo-img {
+    width: 35%;
+  }
+  h1 {
+    text-align: center;
+    letter-spacing: 1.5rem;
+    font-size: 5.5rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    width: 12ch;
+    text-transform: uppercase;
+  }
+  .action {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+  h1 + p {
+    text-align: center;
+    font-size: 2rem;
+    width: 32ch;
+  }
+  #email {
+    min-width: 90%;
+    padding: 1.5rem;
+  }
+  .submit {
+    position: absolute;
+    left: 65%;
+    border-radius: 35px;
+    width: 15%;
+    cursor: pointer;
+    color: hsl(0, 80%, 76%);
+  }
+}
