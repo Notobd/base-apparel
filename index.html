@@ -32,16 +32,23 @@
           </p>
           <form action="get" id="input-form">
             <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email Address"
-              class="input"
-            />
-            <button type="submit" class="submit">
-              <img src="/images/icon-arrow.svg" alt="arrow" class="arr-btn" />
-            </button>
+            <div class="inp-btn">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                class="input"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="error"
+                class="error-icon"
+              />
+              <button type="submit" class="submit">
+                <img src="/images/icon-arrow.svg" alt="arrow" class="arr-btn" />
+              </button>
+            </div>
           </form>
           <p class="error"></p>
         </div>

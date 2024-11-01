@@ -7,6 +7,8 @@ const subBtn = document.querySelector('.submit');
 console.log(subBtn);
 const message = document.querySelector('.error');
 console.log(message);
+const error = document.querySelector('.error-icon');
+console.log(error);
 
 // created a regualr expression to validate email adding the .test method to the regex variable and pass in the emailinput value as argument
 //emailReg.test(emailInput.value)
@@ -17,8 +19,10 @@ const validateMail = function () {
   if (mailValue === '') {
     message.textContent = 'Input a mail';
   } else if (!emailReg.test(mailValue)) {
-    message.textContent = 'Provide valid mail';
+    error.style.display = 'block';
+    message.textContent = 'Please provide a valid mail';
   } else {
+    error.style.display = 'none';
     message.textContent = 'sucess';
   }
 };
