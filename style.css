@@ -23,12 +23,18 @@ body {
 main {
   display: flex;
   gap: 30px;
-  padding: 2rem;
 }
 .main-info {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding: 2rem;
+}
+.imgs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .logo-img,
 .hero-img,
@@ -36,6 +42,11 @@ main {
   display: block;
   height: auto;
   width: 100%;
+}
+.notification {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .input {
   border-radius: 35px;
@@ -67,6 +78,9 @@ input[placeholder] {
 }
 .arr-btn {
   padding: 1.3rem;
+}
+.hero-section {
+  padding: 2rem;
 }
 .attribution {
   font-size: 11px;
@@ -175,12 +189,20 @@ input[placeholder] {
   }
   .hero-section {
     order: 1;
+    padding: 0;
+  }
+  .main-info {
+    padding: 0;
   }
   .main-info {
     order: 2;
   }
   .logo-img {
     width: 35%;
+    margin-left: 30px;
+  }
+  .notification {
+    padding: 20px;
   }
   h1 {
     text-align: center;
@@ -210,9 +232,9 @@ input[placeholder] {
   }
   .submit {
     position: absolute;
-    left: 80%;
+    left: 66%;
     border-radius: 35px;
-    width: 18%;
+    width: 20%;
     cursor: pointer;
     color: hsl(0, 80%, 76%);
   }
