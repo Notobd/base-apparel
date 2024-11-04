@@ -290,6 +290,7 @@ input[placeholder] {
   }
   h1 + p {
     text-align: center;
+    line-height: 2;
     font-size: 1.2rem;
     font-weight: 500;
     width: 36ch;

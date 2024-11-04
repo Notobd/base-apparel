@@ -36,7 +36,7 @@ const submit = e => {
 };
 subBtn.addEventListener('click', submit);
 
-//extra functionality to make the enter button act as the submit button added the event listener to the entire document thats why its not attached to any defined variable in the global scope
+//extra functionality to make the Enter button act as the submit button added the event listener to the entire document thats why its not attached to any defined variable in the global scope
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     console.log(e);
